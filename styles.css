@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+/* Write CSS code below */
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    justify-content: center;
+    height: 1000px;
+    width: 90%;
+}
+.left-section{
+    
+    background-color: gray;
+    grid-column: span 1;
+}
+.legt-content{
+    padding: 1rem;
+}
+.right-section{
+    grid-column-start: 300px;
+    grid-column-end: 1000px;
+    background-color: rgb(231, 235, 247);
+    grid-column:  span 1 / span 2;
+    width: 90%;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.social-media .icon img{
+    height: 30px;
+    width: 30px;
+}
+.personal-details{
+    padding-left: 20px;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    background-color: white;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-main-content .col{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0.5rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.about .para{
+    padding: 0.5rem;
+}
+@media screen and (max-width: 673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
