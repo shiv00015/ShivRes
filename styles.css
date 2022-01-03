@@ -1,18 +1,19 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* Write CSS code below */
 .main-content{
     display: grid;
     grid-template-columns: 300px 700px;
-    justify-content: center;
     height: 1000px;
     width: 90%;
 }
 .left-section{
-    
+    grid-column-end: 300px;
     background-color: gray;
     grid-column: span 1;
 }
